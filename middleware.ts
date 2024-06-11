@@ -12,7 +12,7 @@ export async function middleware(req: NextRequest) {
 
   try {
     // const isInMaintenanceMode = await get<boolean>('isInMaintenanceMode')
-    const isInMaintenanceMode = false
+    const isInMaintenanceMode = true
   
     if (isInMaintenanceMode) {
       req.nextUrl.pathname = `/closed`
